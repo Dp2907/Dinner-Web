@@ -1,0 +1,44 @@
+.myBtn {
+  padding: 0.2em 0.6em;
+  font-size: 1.2rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  border-radius: $border-radius;
+  border: 2px solid transparent;
+
+  &:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: $primary-color;
+  }
+}
+
+.myPrimaryBtn {
+  color: #fff;
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
+
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    opacity: 0.8;
+  }
+}
+
+#myNavBtn {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fbfdfb;
+  font-size: 1.95em;
+  padding: 0 8px;
+}
