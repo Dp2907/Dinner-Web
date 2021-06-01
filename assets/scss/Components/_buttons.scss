@@ -1,3 +1,4 @@
+a.myBtn,
 .myBtn {
   padding: 0.2em 0.6em;
   font-size: 1.2rem;
@@ -6,12 +7,9 @@
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
+  @include transition(all, 0.3s, ease);
   border-radius: $border-radius;
-  border: 2px solid transparent;
+  display: inline-block;
 
   &:hover {
     background: #fff;
@@ -20,6 +18,7 @@
   }
 }
 
+a.myPrimaryBtn,
 .myPrimaryBtn {
   color: #fff;
   background-color: $primary-color;

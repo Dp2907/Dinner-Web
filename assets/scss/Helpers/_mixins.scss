@@ -19,3 +19,10 @@
   }
   $theme-map: null !global;
 }
+
+@mixin transition($e, $time, $type) {
+  transition: $e $time $type;
+  -o-transition: $e $time $type;
+  -moz-transition: $e $time $type;
+  -webkit-transition: $e $time $type;
+}

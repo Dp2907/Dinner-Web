@@ -1,0 +1,36 @@
+.slider {
+  background-size: cover;
+  background: linear-gradient(to right, #ff6600, rgba(5, 3, 0, 0.2)), url("../images/banner1.jpg");
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-attachment: fixed;
+  min-height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .container {
+    transform: translate(0, 55%);
+
+    h2,
+    p {
+      color: #fff;
+    }
+
+    h2 {
+      @include title(28px, 600, 38px);
+      text-transform: capitalize;
+    }
+
+    p {
+      @include text(16px, normal, 28px);
+    }
+
+    a.myBtn {
+      padding: 10px 21px;
+      margin: 0;
+      margin-top: 2rem;
+    }
+  }
+}
